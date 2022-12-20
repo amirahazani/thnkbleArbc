@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Audio Topic 2</title>
+</head>
+<body>
+
+<script>
+var currentPlayer;
+function play(element) {
+
+var audio=document.getElementById(element);
+if(currentPlayer  && currentPlayer != audio) {
+      currentPlayer.pause(); 
+ }
+if (audio.paused)
+            audio.play();
+    else
+        audio.pause();
+        audio.currentTime = 0;
+         currentPlayer = audio;
+}
+</script>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1R2Wamv6RUV2fDt-ykXJfW9DWffTja32q" width="100%" height="auto" onclick="play('audio1');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1s0c-2yvvwdB2SjAkI-LEfsryt82R8EMC" width="100%" height="auto" onclick="play('audio2');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1aoPVr6teF0-Si33GjR9lWYeFXYZaiPji" width="100%" height="auto" onclick="play('audio3');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1kSUPD0eMHxwWrNcZ-sgHJiUUxXjHrzXc" width="100%" height="auto" onclick="play('audio4');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1mIoQDv1FPTCkwTO-WAy89mRn-2QlCqLT" width="100%" height="auto" onclick="play('audio5');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1FasZZlhepTkNI3eynsLhc687O50gzf96" width="100%" height="auto" onclick="play('audio6');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1SHrh2k695kn4yw8t6som14KY6aasaYOb" width="100%" height="auto" onclick="play('audio7');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=10j7uJ-vkbb6fBEt2c3l9AD-DgwSB7pkh" width="100%" height="auto" onclick="play('audio8');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1EvobkSb2ZHUHggwZopyRHM_4EPPkTZJK" width="100%" height="auto" onclick="play('audio9');"></button>
+
+
+
+</body>
+</html>

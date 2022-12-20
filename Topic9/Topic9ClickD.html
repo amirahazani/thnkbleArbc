@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<body>
+    <input type="image" src="https://drive.google.com/uc?export=download&id=1eJLpMqnONHHHa3_pfoZ_oAuFVhttpmvz" id = "button1" width="10%" height="40%" type = "button" </button>
+    <img id = "img1" class = "image" src = "https://drive.google.com/uc?export=download&id=1AGJz1A0WqPFzVKPz--XwoI35OkdtUL2o" width="85%" height="auto" onclick="play('audio1');"></button>    
+    <br>  
+    <input type="image" src="https://drive.google.com/uc?export=download&id=1eJLpMqnONHHHa3_pfoZ_oAuFVhttpmvz" id = "button2" width="10%" height="40%" type = "button" </button>
+    <img id = "img2" class = "image" src = "https://drive.google.com/uc?export=download&id=13y_yxJ0O454rMnDX1AM_-p_dvUnW4L8u" width="85%" height="auto" onclick="play('audio2');"></button>
+	<br>
+	<input type="image" src="https://drive.google.com/uc?export=download&id=1eJLpMqnONHHHa3_pfoZ_oAuFVhttpmvz" id = "button3" width="10%" height="40%" type = "button" </button>
+    <img id = "img3" class = "image" src = "https://drive.google.com/uc?export=download&id=1TBqddYJJpNX6nW67qh4-_pMNijxE79-v" width="85%" height="auto" onclick="play('audio3');"></button>
+	<br>
+	<input type="image" src="https://drive.google.com/uc?export=download&id=1eJLpMqnONHHHa3_pfoZ_oAuFVhttpmvz" id = "button4" width="10%" height="40%" type = "button" </button>
+    <img id = "img4" class = "image" src = "https://drive.google.com/uc?export=download&id=1ma5eF_2heFZ5zMsl19rlpe8FOnmkgX2W" width="85%" height="auto" onclick="play('audio4');"></button>
+	<br>
+	<input type="image" src="https://drive.google.com/uc?export=download&id=1eJLpMqnONHHHa3_pfoZ_oAuFVhttpmvz" id = "button5" width="10%" height="40%" type = "button" </button>
+    <img id = "img5" class = "image" src = "https://drive.google.com/uc?export=download&id=1-_IbfjvGrhBgxqhtDmR29SfouaU_Vwbf" width="85%" height="auto" onclick="play('audio5');"></button>	
+	<br>
+	<input type="image" src="https://drive.google.com/uc?export=download&id=1eJLpMqnONHHHa3_pfoZ_oAuFVhttpmvz" id = "button6" width="10%" height="40%" type = "button" </button>
+    <img id = "img6" class = "image" src = "https://drive.google.com/uc?export=download&id=16q5jdY4OtuRnu1T4F8Tswn6xUySIRGq4" width="85%" height="auto" onclick="play('audio6');"></button>
+	<br>
+	<input type="image" src="https://drive.google.com/uc?export=download&id=1eJLpMqnONHHHa3_pfoZ_oAuFVhttpmvz" id = "button7" width="10%" height="40%" type = "button" </button>
+    <img id = "img7" class = "image" src = "https://drive.google.com/uc?export=download&id=1YYm3uajzgutbIUqwE_zV7uVxp6TQz22-" width="85%" height="auto" onclick="play('audio7');"></button>
+	<br>
+	<input type="image" src="https://drive.google.com/uc?export=download&id=1eJLpMqnONHHHa3_pfoZ_oAuFVhttpmvz" id = "button8" width="10%" height="40%" type = "button" </button>
+    <img id = "img8" class = "image" src = "https://drive.google.com/uc?export=download&id=1o3LnFCN4GYQ4jko0hyQ9Ng4q1tR4pouU" width="85%" height="auto" onclick="play('audio8');"></button>
+
+	
+   <script src="app.js" type="text/javascript"></script>
+
+<audio id="audio1" src="https://drive.google.com/uc?export=download&id=1NI2hZLPSRXUQjj4J1U8sj82jrqGCD-zY" ></audio>
+<audio id="audio2" src="https://drive.google.com/uc?export=download&id=1b3gw-xDeM5JEGlGbHuCOqDPk2IjOPufV" ></audio>
+<audio id="audio3" src="https://drive.google.com/uc?export=download&id=1AprpI-LAEXXsuppvuMJltQ9V2249d8i7" ></audio>
+<audio id="audio4" src="https://drive.google.com/uc?export=download&id=11wKyhhvrVnAEqtTHzUbLRBTE74SZPoyG" ></audio>
+<audio id="audio5" src="https://drive.google.com/uc?export=download&id=1qfjlEZWEz53EaHt5X9_ztk-VfHVniANk" ></audio>
+<audio id="audio6" src="https://drive.google.com/uc?export=download&id=1xrHmtLnhEZdZKLb6Eqf23qkIaBb_1hWl" ></audio>
+<audio id="audio7" src="https://drive.google.com/uc?export=download&id=1tvFOKf6pnuQfkKiqcMTesb8MJFddsNYv" ></audio>
+<audio id="audio8" src="https://drive.google.com/uc?export=download&id=1QY845r4bN0NnsOdVaTWo7c3PjTkpym30" ></audio>
+</body>
+</html>
+
+<script>
+
+var currentPlayer;
+function play(element) {
+
+var audio=document.getElementById(element);
+if(currentPlayer  && currentPlayer != audio) {
+      currentPlayer.pause(); 
+ }
+if (audio.paused)
+            audio.play();
+    else
+        audio.pause();
+        audio.currentTime = 0;
+         currentPlayer = audio;
+}
+
+let button1 = document.getElementById("button1");
+var img1= "https://drive.google.com/uc?export=download&id=1AGJz1A0WqPFzVKPz--XwoI35OkdtUL2o"
+var img1T= "https://drive.google.com/uc?export=download&id=1PjOZd08-SssrMzA2zPebdbJY_2hz-hLi"
+let imgConvo1 = document.getElementById("img1");
+
+let button2 = document.getElementById("button2");
+var img2= "https://drive.google.com/uc?export=download&id=13y_yxJ0O454rMnDX1AM_-p_dvUnW4L8u"
+var img2T= "https://drive.google.com/uc?export=download&id=1O15EgCnuD1DqB11ggv3514WY1KgV3M26"
+let imgConvo2 = document.getElementById("img2");
+
+let button3 = document.getElementById("button3");
+var img3= "https://drive.google.com/uc?export=download&id=1TBqddYJJpNX6nW67qh4-_pMNijxE79-v"
+var img3T= "https://drive.google.com/uc?export=download&id=1-by8LQy4v9JRkpmfiqNCvTYi5jtv0Jer"
+let imgConvo3 = document.getElementById("img3");
+
+let button4 = document.getElementById("button4");
+var img4= "https://drive.google.com/uc?export=download&id=1ma5eF_2heFZ5zMsl19rlpe8FOnmkgX2W"
+var img4T= "https://drive.google.com/uc?export=download&id=12FvJbLC02jTmhl6VmI2-KBOWcSCjAXtr"
+let imgConvo4 = document.getElementById("img4");
+
+let button5 = document.getElementById("button5");
+var img5= "https://drive.google.com/uc?export=download&id=1-_IbfjvGrhBgxqhtDmR29SfouaU_Vwbf"
+var img5T= "https://drive.google.com/uc?export=download&id=1BFrQT6dA2pB3em2wbm00ZjECugvOdoV0"
+let imgConvo5 = document.getElementById("img5");
+
+let button6 = document.getElementById("button6");
+var img6= "https://drive.google.com/uc?export=download&id=16q5jdY4OtuRnu1T4F8Tswn6xUySIRGq4"
+var img6T= "https://drive.google.com/uc?export=download&id=1D1XoXPiFZnTVwODbx3V6n9lzm5cFXOtd"
+let imgConvo6 = document.getElementById("img6");
+
+let button7 = document.getElementById("button7");
+var img7= "https://drive.google.com/uc?export=download&id=1YYm3uajzgutbIUqwE_zV7uVxp6TQz22-"
+var img7T= "https://drive.google.com/uc?export=download&id=1dSB6XJxoqui7Yurqa6JRdCCCp3QQMCH-"
+let imgConvo7 = document.getElementById("img7");
+
+let button8 = document.getElementById("button8");
+var img8= "https://drive.google.com/uc?export=download&id=1o3LnFCN4GYQ4jko0hyQ9Ng4q1tR4pouU"
+var img8T= "https://drive.google.com/uc?export=download&id=13WVPs20AJgmFyf8JZeCRY0Ii-kcpajYf"
+let imgConvo8 = document.getElementById("img8");
+
+
+function imgTranslate1() {
+
+    if (imgConvo1.getAttribute('src') === img1) {
+        imgConvo1.setAttribute('src', img1T);
+    }
+    else {
+        imgConvo1.setAttribute('src', img1);
+    }
+}
+
+function imgTranslate2() {
+
+    if (imgConvo2.getAttribute('src') === img2) {
+        imgConvo2.setAttribute('src', img2T);
+    }
+    else {
+        imgConvo2.setAttribute('src', img2);
+    }
+}
+
+function imgTranslate3() {
+
+    if (imgConvo3.getAttribute('src') === img3) {
+        imgConvo3.setAttribute('src', img3T);
+    }
+    else {
+        imgConvo3.setAttribute('src', img3);
+    }
+}
+
+function imgTranslate4() {
+
+    if (imgConvo4.getAttribute('src') === img4) {
+        imgConvo4.setAttribute('src', img4T);
+    }
+    else {
+        imgConvo4.setAttribute('src', img4);
+    }
+}
+
+function imgTranslate5() {
+
+    if (imgConvo5.getAttribute('src') === img5) {
+        imgConvo5.setAttribute('src', img5T);
+    }
+    else {
+        imgConvo5.setAttribute('src', img5);
+    }
+}
+
+function imgTranslate6() {
+
+    if (imgConvo6.getAttribute('src') === img6) {
+        imgConvo6.setAttribute('src', img6T);
+    }
+    else {
+        imgConvo6.setAttribute('src', img6);
+    }
+}
+
+function imgTranslate7() {
+
+    if (imgConvo7.getAttribute('src') === img7) {
+        imgConvo7.setAttribute('src', img7T);
+    }
+    else {
+        imgConvo7.setAttribute('src', img7);
+    }
+}
+
+function imgTranslate8() {
+
+    if (imgConvo8.getAttribute('src') === img8) {
+        imgConvo8.setAttribute('src', img8T);
+    }
+    else {
+        imgConvo8.setAttribute('src', img8);
+    }
+}
+
+
+
+button1.addEventListener("click", imgTranslate1);
+button2.addEventListener("click", imgTranslate2);
+button3.addEventListener("click", imgTranslate3);
+button4.addEventListener("click", imgTranslate4);
+button5.addEventListener("click", imgTranslate5);
+button6.addEventListener("click", imgTranslate6);
+button7.addEventListener("click", imgTranslate7);
+button8.addEventListener("click", imgTranslate8);
+
+</script>
+
+<style>
+button, img{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 0;
+}
+</style>

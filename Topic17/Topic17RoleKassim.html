@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Audio Topic 2</title>
+</head>
+<body>
+
+<script>
+var currentPlayer;
+function play(element) {
+
+var audio=document.getElementById(element);
+if(currentPlayer  && currentPlayer != audio) {
+      currentPlayer.pause(); 
+ }
+if (audio.paused)
+            audio.play();
+    else
+        audio.pause();
+        audio.currentTime = 0;
+         currentPlayer = audio;
+}
+</script>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1bQvKNSgSAjGiEFHjc18han3y78kZuzfe" width="100%" height="auto" onclick="play('audio1');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=160nEPIUMIgELe2sy-K6P5VL4hvgrBlAp" width="100%" height="auto" onclick="play('audio2');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=19kyhuC3L_K45Epw61NE-eRLh60p3PIPT" width="100%" height="auto" onclick="play('audio3');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1xUrWi-qNMCyGspYclMgcBGOStPDvYD7V" width="100%" height="auto" onclick="play('audio4');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1ynouahZlLh-MJGY3TxNXJ_Q13_-kaVsK" width="100%" height="auto" onclick="play('audio5');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1Qd1gNzubqMpHZmp8Opg4f28eQTBA6iUT" width="100%" height="auto" onclick="play('audio6');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1bgqyG9mFTsFrYC08PzjfTnpKyN4j7jrz" width="100%" height="auto" onclick="play('audio7');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1a23-VbX0V9y3hXqPtZ7czqnhsAoZog4y" width="100%" height="auto" onclick="play('audio8');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=1cm43AOFU2vYYH9FwAnP4C4K0Q1EI8ZSP" width="100%" height="auto" onclick="play('audio9');"></button>
+
+<input type="image" src="https://drive.google.com/uc?export=download&id=14qtelUUoDErfhIpGrwy05HEb6tzubuo6" width="100%" height="auto" onclick="play('audio10');"></button>
+
+
+</body>
+</html>
